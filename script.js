@@ -138,3 +138,36 @@ function removeLocalTodos(todo) {
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem("todos", JSON.stringify(todos));
 }
+
+// Date and Time
+const dateTimeElement = document.getElementById("dateTime");
+
+function updateDateTime() {
+  const currentDate = new Date();
+  
+  const dateOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  };
+
+  const timeOptions = {
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: true // Use 12-hour time format
+  };
+
+  const dateString = currentDate.toLocaleDateString(undefined, dateOptions);
+  const timeString = currentDate.toLocaleTimeString(undefined, timeOptions);
+
+  dateTimeElement.textContent = `${dateString}, ${timeString}`;
+}
+
+updateDateTime();
+
+// Update time every second
+setInterval(updateDateTime, 1000);
+
+
+
