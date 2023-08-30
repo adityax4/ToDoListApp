@@ -13,9 +13,6 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-
-}
-
 .background-image-1 {
     background-image: url('background.jpg');
 }
@@ -27,6 +24,9 @@ body {
 .background-image-3 {
     background-image: url('background3.jpg');
 }
+}
+
+
 
 header {
     font-size: 1.5rem;
