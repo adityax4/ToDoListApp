@@ -13,6 +13,18 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
+
+    .background-image-1 {
+        background-image: url('background.jpg');
+    }
+    
+    .background-image-2 {
+        background-image: url('background2.jpg');
+    }
+    
+    .background-image-3 {
+        background-image: url('background3.jpg');
+    }
 }
 
 header {
@@ -168,7 +180,6 @@ select {
     background: white;
     color: rgb(255, 200, 0);
 }
-/* Existing CSS */
 
 /* Add responsive styles */
 @media screen and (max-width: 768px) {
@@ -202,3 +213,4 @@ select {
         margin: 0.25rem 0;
     }
 }
+
