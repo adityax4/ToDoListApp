@@ -139,6 +139,32 @@ function removeLocalTodos(todo) {
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+// Select the background button and body
+const backgroundButton = document.querySelector(".background-button");
+const body = document.querySelector("body");
+
+// Background options
+const backgroundClasses = ["background-image", "background-image-2", "background-image-3"];
+let currentBackgroundIndex = 0;
+
+// Add click event listener to the background button
+backgroundButton.addEventListener("click", changeBackground);
+
+// Function to change the background image
+function changeBackground() {
+    // Remove the current background class
+    body.classList.remove(backgroundClasses[currentBackgroundIndex]);
+
+    // Increment the background index
+    currentBackgroundIndex = (currentBackgroundIndex + 1) % backgroundClasses.length;
+
+    // Add the new background class
+    body.classList.add(backgroundClasses[currentBackgroundIndex]);
+}
+
+
+
+
 // Date and Time
 const dateTimeElement = document.getElementById("dateTime");
 
