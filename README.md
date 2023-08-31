@@ -4,7 +4,8 @@ Welcome to Our Todo List Web App project!
 
 ## Contributors
 - ADITYA, RollNo. 00315007222
-- AKASH SHARMA, RollNo. 09415002721
+- AKASH SHARMA, RollNo. 09415002721 
+- ARPAN MANCHANDA, RollNo. 03315002720
 
 ## Features
 
