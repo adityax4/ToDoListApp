@@ -8,7 +8,7 @@ Welcome to Our Todo List Web App project!
 ## Features
 
 - Add tasks with priority levels.
-- Shows current time and date to then user.
+- Shows current time and date to the user.
 - Mark tasks as completed.
 - Delete tasks from the list.
 - Clear all completed tasks at once.
